@@ -51,7 +51,7 @@ http.createServer(function (request, response) {
                     responseMessage += '\nYour provided password is: '+password;
                 
                 responseMessage += '\n\nRequest Id: '+requestId;
-                //responseMessage += '\n\nProcess Id: '+process.pid;
+                responseMessage += '\n\nProcess Id: '+process.pid;
                 response.end(responseMessage);
        
             });       
